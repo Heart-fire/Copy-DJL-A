@@ -1,0 +1,1311 @@
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				width: 100%;
+				height: 100%;
+			}
+
+			/* -------------------------------------------------------------------------------导航栏css代码---- */
+			.header {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 103.99px;
+				background-color: #ffffff;
+			}
+
+
+			.navigation {
+				width: 1200px;
+				height: 64px;
+				margin: 0 auto;
+				justify-content: center;
+				font-size: 14px;
+				/* background-color: #aaff7f; */
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.navigationBar {
+				/* background: #ff0000; */
+				width: 900px;
+				text-align: center;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			.header div a {
+				margin-right: 32px;
+				color: #000000D9;
+				text-decoration: none;
+			}
+
+			.header a:hover {
+				text-decoration: underline;
+			}
+
+			.logo div {
+				display: flex;
+				margin-right: 48px;
+			}
+
+			.logo a i {
+				font-size: 24px;
+			}
+
+			.logo a span {
+				color: #3b3e40;
+				font-size: 18px;
+				margin-left: 8px;
+			}
+
+			.logo a:hover {
+				text-decoration: none;
+			}
+
+			/* ----------------------------------------------搜索购物车登录三个图标的背景-- */
+			.userBar {
+				/* background-color: #ffaa00; */
+				width: 130px;
+				display: flex;
+				align-items: center;
+				/* background-color: #0060EF; */
+			}
+
+			.userBar i {
+				padding: 0 10px;
+				font-size: 18px;
+			}
+
+			/* -------------------------------------------------随心换的背景------ */
+			.Sui-heart {
+				width: 50px;
+				height: 20px;
+				color: white;
+				font-size: 10px;
+				font-weight: bold;
+				line-height: 19px;
+				margin-left: -25px;
+				border-radius: 10px 5px 5px 10px;
+				background-color: #0060EF;
+			}
+
+			.Zengzhi {
+				display: flex;
+				flex-direction: row;
+				width: 135px;
+				height: 20px;
+			}
+
+			.top {
+				height: 40px;
+				width: 100%;
+				color: #565757;
+				/* background-color:#aaaa00 ; */
+			}
+
+			.top-1 {
+				width: 1200px;
+				height: 30px;
+				margin: 0 auto;
+				margin-top: 10px;
+				font-size: 12px;
+				display: flex;
+				flex-direction: row;
+				/* background-color: #ebd450; */
+			}
+
+			.top-2 {
+				height: 20px;
+				width: 200px;
+				font-size: 13px;
+				text-align: center;
+				margin-left: 469px;
+				margin-top: 3px;
+				/* background-color: #ffaaff; */
+			}
+
+			.fixedIcon {
+				position: relative;
+				/* 相对定位 */
+				width: 40px;
+				/* 调整为你需要的宽度 */
+				height: 40px;
+				/* 调整为你需要的高度 */
+				margin-left: -8px;
+			}
+
+			.fixedIcon i {
+				display: block;
+				/* 将图标设置为块级元素 */
+				width: 100%;
+				/* 宽度填充容器 */
+				height: 100%;
+				/* 高度填充容器 */
+				font-size: 21px;
+				margin-top: 9px;
+			}
+
+			/* ----------------------------------------购物车下拉框---- */
+			.dropdownContent {
+				position: absolute;
+				/* 绝对定位 */
+				top: 53px;
+				/* 从容器的底部开始显示 */
+				right: 0;
+				/* 从容器的左边开始显示 */
+				width: 256px;
+				/* 宽度填充整个容器 */
+				background-color: white;
+				display: none;
+				/* 默认隐藏下拉内容 */
+				height: 56px;
+				border-radius: 10px;
+			}
+
+			/* -----------------------------------------登录注册下拉框--- */
+			.dropdownContent-2 {
+				position: absolute;
+				/* 绝对定位 */
+				top: 50px;
+				/* 从容器的底部开始显示 */
+				right: 0;
+				/* 从容器的右边开始显示 */
+				width: 187px;
+				/* 宽度填充整个容器 */
+				background-color: white;
+				display: none;
+				/* 默认隐藏下拉内容 */
+				height: 100px;
+				border-radius: 10px;
+			}
+
+			.fixedIcon:hover .dropdownContent {
+				display: block;
+				/* 当鼠标悬停时显示下拉内容 */
+			}
+
+			.fixedIcon:hover .dropdownContent-2 {
+				display: block;
+				/* 当鼠标悬停时显示下拉内容 */
+			}
+
+			/* --------------------------------------------------购物车--下拉框中的背景框----- */
+			.dropdownContent-1 {
+				width: 120px;
+				height: 25px;
+				margin: 0 auto;
+				color: #565757;
+				font-size: 16px;
+				margin-top: 15px;
+				text-align: center;
+				/* background-color: #0060EF; */
+			}
+
+			/* -----------------------------------------------------登录---下拉框的背景 */
+			.dropdownContent-2-one {
+				font-size: 16px;
+				width: 187px;
+				height: 40px;
+				padding-top: 9px;
+				/* background-color: #54e217; */
+				margin: 0 auto;
+				border-radius: 10px 10px 0 0;
+			}
+
+			/* ------------------------------------------------注册-下拉框的背景 -------*/
+			.dropdownContent-2-two {
+				font-size: 16px;
+				width: 187px;
+				height: 40px;
+				padding-top: 9px;
+				/* background-color: #19c8e2; */
+				margin: 0 auto;
+				border-radius: 0 0 10px 10px;
+			}
+
+			/* -------------------------------------------------去除下划线-------------- */
+			.fixedIcon a:hover {
+				text-decoration: none;
+			}
+
+			/* -------------------------------------------------登录注册鼠标滑过--变颜色 */
+			.dropdownContent-2-one:hover,
+			.dropdownContent-2-two:hover {
+				background-color: #e1e2e2;
+			}
+
+			/* ------------------------------------------------------导航栏代码结束-------- */
+			/* ------------------------------------------------------以下是三个居中图片框-- */
+			.box0 {
+				background-color: aqua;
+			}
+
+			.box {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				height: 50px;
+				width: 1920px;
+				background: #dfdfdf;
+			}
+
+			.z {
+				color: white;
+				height: 30px;
+			}
+
+			.container {
+				background-color: #F0F1F2;
+				height: 100%;
+				width: 100%;
+			}
+
+			.container-2 {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				margin-top: 30px;
+				margin: 0 auto;
+				width: 1200px;
+
+			}
+
+			.container-2 img {
+				width: 389px;
+				height: 260px;
+
+			}
+
+			.box-2 h1 {
+				padding-top: 40px;
+				text-align: center;
+
+				font-size: 56px;
+				line-height: 64px;
+				margin-bottom: 16px;
+			}
+
+			.box-2 h3 {
+				margin-top: 20px;
+				font-size: 25px;
+				text-align: center;
+				color: #606061;
+				margin-bottom: 10px;
+			}
+
+			.centerimg {
+				border-radius: 8px 8px 8px 8px;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 28px;
+				background-color: #ffffff;
+				width: 389px;
+				height: 320px;
+				margin: 0 10px;
+				/* 上下 左右边距 */
+			}
+
+			.centerimg div {
+				margin: 5px 0 0 20px;
+				/* 日常航拍...三个文字的上右下左外边距 */
+			}
+
+			.rounded-image {
+				border-radius: 8px 8px 0 0;
+				/* 图片上框左右半径为8, 底边不动 */
+			}
+
+			.two-lijie {
+				/* 修饰两个链接 */
+				margin-top: 20px;
+				height: 100px;
+			}
+
+			.two-lijie .c {
+				line-height: 28px;
+				font-size: 18px;
+				margin: auto;
+				width: 210px;
+				/* 两个链接字体大小 */
+			}
+
+			.two-lijie a {
+				text-decoration: none;
+			}
+
+			.two-lijie .c a:hover {
+				text-decoration: underline;
+			}
+			/* --------------------------------------------三个居中图片框结束--------- */
+			.font {
+				margin: 0 auto;
+				width: 1200px;
+			}
+
+			.Lianjie li {
+				color: #242424;
+				margin-right: 16px;
+				font-size: 25px;
+				display: inline;
+			}
+
+			.Lianjie {
+				margin-bottom: 51px;
+			}
+
+			.Lianjie a {
+				color: black;
+				text-decoration: none;
+			}
+
+			.Lianjie a:hover {
+				text-decoration: underline;
+			}
+
+			.Buy-now {
+				margin: 0 auto;
+				display: flex;
+				width: 1200px;
+			}
+
+			.Buy-now img {
+				margin: auto;
+				width: 288px;
+				height: 239.88px;
+			}
+
+			.name {
+				width: 1200px;
+				height: 28px;
+				display: flex;
+				margin: 0 auto;
+				line-height: 28px;
+				font-size: 23px;
+				font-weight: bold;
+				;
+
+			}
+
+			.name .name-1 {
+				flex: 1;
+				text-align: center;
+			}
+
+			.flagship {
+				width: 1200px;
+				height: 28px;
+				display: flex;
+				margin: 0 auto;
+				line-height: 28px;
+				font-size: 15px;
+
+			}
+
+			.flagship .flagship-1 {
+				flex: 1;
+				text-align: center;
+			}
+
+			.introduce {
+				width: 1200px;
+				height: 28px;
+				display: flex;
+				margin: 0 auto;
+				line-height: 28px;
+				font-size: 15px;
+
+			}
+
+			.introduce .introduce-1 {
+				flex: 1;
+				text-align: center;
+			}
+
+			.Price {
+				width: 1200px;
+				height: 48px;
+				display: flex;
+
+				margin: 0 auto;
+				line-height: 28px;
+				font-size: 17px;
+
+			}
+
+			.Price .Price-1 {
+				margin-top: 20px;
+				flex: 1;
+				text-align: center;
+			}
+
+			.Btu {
+				width: 1200px;
+				height: 100px;
+				margin: 0 auto;
+				display: flex;
+				/* background-color: #f18b5c; */
+			}
+
+			.Btu a {
+				text-decoration: none;
+			}
+
+			.Btu .Btu-1 {
+				width: 95px;
+				height: 38px;
+				color: white;
+				border: none;
+				/* 去除按钮边框 */
+				border-radius: 30px 30px 30px 30px;
+				background-color: #0060EF;
+				margin: 0 auto;
+				margin-top: 24px;
+				padding: 5px;
+			}
+
+			/* 鼠标划过Button变色 */
+			.Btu-1:hover {
+				background-color: #0056b3;
+			}
+
+			.Btu .Btu-1 .Btu-2 {
+				font-size: 17px;
+				margin-top: 10px;
+			}
+
+			/* ---------------------------------------------------------------------------------------- */
+			.light {
+				width: 1200px;
+				height: 70px;
+				margin: 0 auto;
+			}
+
+			.light div {
+				font-size: 25px;
+			}
+
+			.container-A {
+				display: flex;
+				margin: 0 auto;
+				flex-direction: row;
+				width: 1200px;
+				height: 600px;
+				background: #EBEBEB;
+			}
+
+			.container-A .row {
+				width: 1200px;
+				height: 150px;
+			}
+
+			.container-A .row .zi {
+				width: 110px;
+				height: 70px;
+				color: #282828;
+				text-align: center;
+				font-weight: bold;
+				padding: 23px;
+				margin: 0 auto;
+				/* 让985克字体居中 */
+				font-size: 25px;
+				/* 控制 985克和重量字体大小 */
+			}
+
+			.container-A .row span {
+				color: #282828;
+				padding-top: 5px;
+				margin: 0 auto;
+				font-size: 18px
+					/* 单独控制重量字体大小 */
+			}
+
+			.container-A .row .col-1 {
+				flex: 1;
+				margin: 20px;
+				height: 120px;
+			}
+
+			/* --------------------------------------------------------------------------------------- */
+
+			.container-B {
+				display: flex;
+				margin: 0 auto;
+				background: #EBEBEB;
+				flex-direction: row;
+				width: 1200px;
+				height: 700px;
+			}
+
+			.container-B .row-1 {
+				flex: 1;
+				width: 1200px;
+				height: 160px;
+			}
+
+			.container-B .row-1 .zi-1 {
+				width: 220px;
+				height: 150px;
+				text-align: center;
+				padding: 10px;
+				margin: 0 auto;
+				/* 让985克字体居中 */
+				font-size: 25px;
+				/* 控制 985克和重量字体大小 */
+			}
+
+			.container-B .row-1 .col-2 {
+				flex: 1;
+				margin: 10px;
+				height: 160px;
+			}
+
+			.container-B .row-1 span {
+				color: #282828;
+				margin: 0 auto;
+				font-size: 18px
+					/* 单独控制重量字体大小 */
+			}
+
+			/* ------------------------------------------------------------------------------- */
+			.container-C {
+				display: flex;
+				margin: 0 auto;
+				background: #EBEBEB;
+				flex-direction: row;
+				width: 1200px;
+				height: 550px;
+			}
+
+			.container-C .row {
+				flex: 1;
+				/* 竖着撕裂在灰色框由左向右分布均匀 */
+				width: 200px;
+				height: 160px;
+				margin: 10px;
+			}
+
+			.container-C .row .col-1 {
+				margin: 20px;
+				height: 150px;
+			}
+
+			.container-C .row .zi {
+				width: 165px;
+				height: 100px;
+				color: #282828;
+				text-align: center;
+				padding: 23px;
+			}
+
+			.container-C .row span {
+				color: #282828;
+				padding-top: 5px;
+				margin: 0 auto;
+				font-size: 18px
+					/* 单独控制重量字体大小 */
+			}
+
+			/* ----------------------四列轮播图样式---------------------------- */
+			.big-containter .swiper {
+				width: 290px;
+				height: 290px;
+			}
+
+			.First-Box .img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 8px 8px 0 0;
+				object-fit: cover;
+			}
+
+			/* 两个元素都会应用相同的颜色样式 */
+			.First-Box .swiper-button-next,
+			.First-Box .swiper-button-prev {
+				color: #ffffff;
+			}
+
+			.First-Box {
+				width: 288px;
+				height: 444px;
+				background-color: white;
+				border-radius: 8px 8px 8px 8px;
+				transition: box-shadow 0.2s;
+				/* 使用transition属性来控制过渡时间和效果 */
+			}
+
+			.First-Box:hover {
+				/* 阴影的偏移量为0，模糊半径为8px*/
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+			}
+
+			.First-Box .a {
+				font-size: 15px;
+				line-height: 20px;
+				margin: 10px 0 0 50px;
+				/* 上右下左外边距 */
+				padding-top: 5px;
+				width: 150px;
+				height: 25px;
+			}
+
+			.First-Box .a-name {
+				width: 160px;
+				color: #262626;
+				font-size: 22px;
+				margin-left: 50px;
+			}
+
+			.First-Box .a-price {
+				font-size: 18px;
+				width: 150px;
+				margin-top: 30px;
+				margin-left: 50px;
+			}
+
+			.big-containter {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin: 0 auto;
+				width: 1200px;
+				height: 500px;
+			}
+
+			.a-name-2 {
+				width: 288px;
+				height: 365px;
+				border-radius: 8px 8px 8px 8px;
+				background: url("../img/background.jpg") no-repeat;
+				background-size: contain;
+				transition: box-shadow 0.2s;
+				border-radius: 8px;
+			}
+
+			.a-name-2 .a-name-xuanze {
+				width: 200px;
+				font-weight: bold;
+				font-size: 25px;
+				margin: 30px 0 0 40px;
+
+			}
+
+			.a-name-xia {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 288px;
+				height: 70px;
+				margin-top: 10px;
+				transition: box-shadow 0.2s;
+				border-radius: 8px 8px 8px 8px;
+				background-color: #ffffff;
+			}
+
+			.a-name-xia:hover {
+				/* 阴影的偏移量为0，模糊半径为8px*/
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+			}
+
+			.First-Box-2 {
+				width: 288px;
+				height: 444px;
+				display: flex;
+				flex-direction: column;
+				border-radius: 8px 8px 8px 8px;
+
+				/* 使用transition属性来控制过渡时间和效果 */
+			}
+
+			.a-name-2:hover {
+				/* 阴影的偏移量为0，模糊半径为8px*/
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+			}
+
+			.First-Box-2 .icon-xuanze {
+				color: #131412;
+				font-size: 25px;
+			}
+
+			.peijian {
+				width: 200px;
+				height: 35px;
+				font-size: 25px;
+				text-align: center;
+				font-weight: bold;
+				color: #3B3E40;
+			}
+
+			/* --------------------以下是轮播图的css样式----------------------------- */
+			.swiper {
+				display: flex;
+				width: 1702px;
+				height: 540px;
+				border-radius: 10px 10px 10px 10px;
+			}
+
+			.swiper-slide {
+				border-radius: 10px 10px 10px 10px;
+				background: #ffffff;
+
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 403px;
+				height: 260px;
+				object-fit: cover;
+				border-radius: 10px 10px 0px 0px;
+			}
+
+			.caption {
+				width: 370px;
+				height: 50px;
+				margin: 20px 0 0 20px;
+				font-size: 25px;
+
+			}
+
+			.caption-2 {
+				width: 365px;
+				height: 150px;
+				color: #595959;
+				margin: 0 auto;
+				text-align: left;
+				font-size: 18px;
+				background: #ffffff;
+			}
+
+			.caption-3 {
+				width: 200px;
+				height: 40px;
+				margin: 10px 0 10px 20px;
+				font-size: 17px;
+				background: #ffffff;
+			}
+
+			/* ---------------------Videos------------------------------ */
+			.BIG-container-2 {
+				margin: 0 auto;
+				height: 750px;
+			}
+
+
+			.BIG-container-2 .swiper {
+				width: 1500px;
+				height: 705px;
+
+			}
+
+			.mySwiper1 .swiper-slide {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.mySwiper1 .swiper-slide .Video-img>img {
+				display: block;
+				width: 1200px;
+				height: 600px;
+				object-fit: cover;
+			}
+
+			.rounded-video {
+				border-radius: 8px 8px 8px 8px;
+			}
+
+			.Video-img {
+				display: flex;
+				flex-direction: column;
+				width: 1200px;
+				height: 600px;
+				position: relative;
+				/* 添加相对定位 */
+			}
+
+			/* -------视频的--左下角框架的背景及定位 --------------------*/
+			.Video-img-2 {
+				display: flex;
+				/* 让左下角框架中的无人机图片框架呈水平垂直 */
+				justify-content: center;
+				align-items: center;
+				background: white;
+				border-radius: 8px 8px 8px 8px;
+				width: 368px;
+				height: 91px;
+				position: absolute;
+				/* 添加绝对定位 */
+				bottom: 20px;
+				/* 将框架定位到底部 */
+				left: 20px;
+				/* 将框架定位到左侧 */
+			}
+
+			/* 视频左下角的框架的修饰 ----------------*/
+			.Video-img-2-xia {
+				width: 350px;
+				height: 75px;
+				display: flex;
+				/* 设置为flex布局，且为行排列，图片和字为一行 */
+				flex-direction: row;
+			}
+
+			/* 视频左下角的框架中的小图片的修饰 ----------------*/
+			.Video-img-2-xia>img {
+				width: 75px;
+				height: 75px;
+			}
+
+			/* 视频左下角的框架中的小图片右边字体的修饰 --------- */
+			.Video-img-2-xia-font {
+				width: 170px;
+				font-size: 18px;
+			}
+
+			.Video-img-2-xia-font .Goumai {
+				background-color: blue;
+				width: 100px;
+			}
+
+			/* ------------------------------------------------------- */
+			.BIG-container-2 .swiper-slide {
+				width: 80%;
+			}
+
+			.BIG-container-2 .swiper-slide:nth-child(2n) {
+				width: 80%;
+			}
+
+			.BIG-container-2 .swiper-slide:nth-child(3n) {
+				width: 80%;
+			}
+
+			/* --------------------以下是---立即购买---所在框css样式--------------------------------------------- */
+			.Mavic {
+				height: 92px;
+				width: 367px;
+			}
+
+			.Btu-two a {
+				text-decoration: none;
+			}
+
+			.Btu-two {
+				width: 80px;
+				height: 30px;
+				border: none;
+				/* 去除按钮边框 */
+				border-radius: 30px 30px 30px 30px;
+				/* 椭圆 */
+				background-color: #0060EF;
+				margin: 40px 5px 0 30px;
+				/* 立即购买 框 的上右下左外边距 */
+				padding: 5px;
+				/* 立即购买文字 对框的内边距 成居中显示 */
+			}
+
+			/* 鼠标划过Button变色 */
+			.Btu-two:hover {
+				background-color: #0056b3;
+			}
+
+			.Btu-two .Btu-two-2 {
+				font-size: 15px;
+			}
+
+			/* -----------以下是头像--评论部分--------------------------------- */
+			.Name-yulu {
+				display: flex;
+				flex-direction: row;
+				width: 1170px;
+				height: 104px;
+				margin: 0 auto;
+			}
+
+			/* -----------------设置头像------------------ */
+			.Name-yulu .Head-portrait {
+				width: 32px;
+				height: 32px;
+				margin: 10px 10px 10px 20px;
+				/* -----上----右---下---左-- */
+				border-radius: 50%;
+				/* 头像做成圆形 */
+			}
+
+			/* 定义头像昵称 名字-----的字体 */
+			.Name-yulu-font {
+				width: 1170px;
+				height: 30px;
+				color: #545454;
+				font-size: 19px;
+				margin-top: 14px;
+			}
+
+			/* ---------设置个性签名----------------- */
+			.Name-yulu-Signature {
+				width: 1170px;
+				height: 60px;
+				color: #242424;
+				margin: 0 auto;
+				font-size: 18px;
+			}
+
+			/* --------------------------------------------------航拍无人机教程css修饰代码部分-------------------- */
+			.mySwiper-Air {
+				margin: 0 auto;
+				width: 1200px;
+				height: 480px;
+			}
+
+			.mySwiper-Air .swiper-slide {
+				background: #aaffff;
+
+			}
+
+			.mySwiper-Air .swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.mySwiper-Air .swiper-slide {
+				background: #fff;
+				width: 389px;
+				height: 480px;
+				border-radius: 8px;
+				overflow: hidden;
+				position: relative;
+				transition: box-shadow 0.2s ease;
+			}
+
+			.mySwiper-Air .swiper-slide img {
+				width: 389px;
+				height: 500px;
+				transition: transform 0.5s ease;
+				position: absolute;
+			}
+
+			.mySwiper-Air .swiper-slide:hover img {
+				transform: translateY(12px) scale(1.1, 1.1);
+			}
+
+			.mySwiper-Air .swiper-slide-text {
+				position: absolute;
+				left: 30px;
+			}
+
+			.mySwiper-Air .swiper-slide-text .p1 {
+				font-weight: bold;
+				margin-top: 20px;
+				font-size: 34px;
+				color: white;
+			}
+
+			.mySwiper-Air .swiper-slide-text .p2 {
+				width: 211px;
+				font-size: 20px;
+				color: white;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+			/* ------------------------------页脚css样式---------------------------------------- */
+			.footer {
+				height: 700px;
+				width: 100%;
+				margin: 0 auto;
+				background-color: #FFFFFF;
+			}
+
+			.footer-1 {
+				margin: 0 auto;
+				width: 1200px;
+			}
+
+			.footer-one {
+				display: flex;
+				flex-direction: row;
+				height: 180px;
+				width: 1200px;
+			}
+
+			/* -----------包邮。。。等三个图标-------------- */
+			.footer-one-1 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex: 1;
+			}
+
+			.Pake {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 100px;
+				width: 380px;
+			}
+
+			/* -----------图标--下的文字说明的修饰--------- */
+			.Pake p {
+				font-size: 15px;
+				line-height: 30px;
+				color: #6c7073;
+			}
+
+			/* ----------图标--在线支持超链接-的修饰--------- */
+			.Pake a {
+				color: #0060ef;
+			}
+
+			/* -----------------支付------------------------------ */
+			.footer-one-2 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex: 1;
+			}
+
+			/* ---------------联系我们------------------------------- */
+			.footer-one-3 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex: 1;
+			}
+
+			/* -------------热门产品分类等四个框的修饰---------------------------------------------- */
+			.footer-two {
+				margin: 0 auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-top: 100px;
+				margin-bottom: 20px;
+				height: 270px;
+				width: 1200px;
+			}
+
+			/* -----------------------------热门商品分类---- */
+			.footer-two-1 {
+				width: 170px;
+				margin-right: 16px;
+				font-size: 13px;
+			}
+
+			.footer-two li {
+				list-style-type: none;
+				padding-top: 15px;
+			}
+
+			/* -------------------------------帮助与支持--- */
+			.footer-two-2 {
+				width: 170px;
+				margin-right: 16px;
+				font-size: 13px;
+			}
+
+			/* -------------------------------商城特色----- */
+			.footer-two-3 {
+				width: 180px;
+				font-size: 13px;
+			}
+
+			/* ----------------------------------订阅-------- */
+			.footer-two-4 {
+				width: 200px;
+				font-size: 13px;
+			}
+
+			/* -------------------------------探索精彩大疆----- */
+			.footer-two-5 {
+				width: 170px;
+				font-size: 13px;
+			}
+
+			/* -------------------------------------------- */
+			/* ----------修饰超链接样式--------------------- */
+			.footer-two a {
+				text-decoration: none;
+				color: #6C7073;
+			}
+
+			.footer-two a:hover {
+				color: #0060ef;
+			}
+
+			/* ---------------------------------------- */
+			.input-container {
+				display: flex;
+
+			}
+
+			/* -----------------------------------------邮箱----- */
+			.footer-two-4 .email {
+				height: 10px;
+				width: 142px;
+				margin-top: 20px;
+				font-size: 14px;
+				border: 1px solid #D4D7D9;
+				padding: 10px;
+			}
+
+			.footer-two-4 .email:focus {
+				outline: none;
+				/* 当点击输入框时去掉应有的边框 */
+				box-shadow: 0 0 5px 5px rgba(0, 0, 255, 0.3);
+			}
+
+			.footer-two-4 .submit {
+				/*-------提交按钮--------- */
+				height: 32px;
+				width: 32px;
+				color: white;
+				margin-left: -5px;
+				outline: none;
+				/* 点击时边框也去掉 */
+				border: none;
+				/* 默认边框去掉 */
+				border-radius: 0 5px 5px 0;
+				/* ------------左-右-右-左*/
+				background-color: #6C7073;
+			}
+
+			.footer-two-4 .submit:focus {
+				box-shadow: 0 0 5px 5px rgba(231, 231, 231, 0.3);
+			}
+
+			.footer-three {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin: 0 auto;
+				height: 130px;
+				width: 1200px;
+			}
+
+			/* ---------LOGO和字体的长框----------------------- */
+			.footer-three-1 {
+				width: 600px;
+				height: 40px;
+				/* background-color: #aaffff; */
+				display: flex;
+				flex-direction: row;
+
+			}
+
+			/* -------------修饰-------------------LOGO----------------------------- */
+			.footer-three-LOGO {
+				height: 25px;
+				margin: 6px 0 10px 0;
+				/* ----上--右-下--左 */
+			}
+
+			/* ------------LOGO右边----超链接的背景框----关于我们--------------------------------- */
+			.footer-three-2 {
+				width: 400px;
+				height: 30px;
+				margin-top: 6px;
+				margin-left: 20px;
+				/* background-color:#49ba29; */
+			}
+
+			.footer-three-3 {
+				width: 500px;
+				height: 40px;
+				display: flex;
+				flex-direction: row-reverse;
+				/* ---按照相反的行排列--让字体图标为由右向左排列----- */
+				/* background-color: #dddddd; */
+			}
+
+			/* ----图标的左右间距--------------------抖音微博等----- */
+			.footer-three-3-Tubiao i {
+				color: #6C7073;
+				margin-right: 12px;
+			}
+
+			.footer-three-3-Tubiao {
+				height: 25px;
+				margin-top: 6px;
+				/* background-color: #ececec; */
+			}
+
+			/* ------------------------------修饰LOGO右边超链接样式和字体大小-- */
+			.footer-three-2 a {
+				font-size: 13px;
+				margin-left: 20px;
+				/* 超链接距离LOGO的左边距 */
+				text-decoration: none;
+				/* 去除下划线 */
+				color: #6C7073;
+			}
+
+			/* ----鼠标滑动过显示的颜色----------------------- */
+			.footer-three-2 a:hover {
+				color: #0060ef;
+			}
+
+			/* ---------------------------------------隐私权政策------- */
+			.footer-three-4 {
+				width: 1200px;
+				height: 60px;
+				font-size: 13px;
+				display: flex;
+				flex-direction: row;
+				/* ----------给边框加上---上边框--实线-----宽度为1px */
+				border-top: 1px solid #e3e3e3;
+				/* background-color:#c6e5ff; */
+			}
+
+			/* ---------------大疆创新版权所有的--背景框------------------- */
+			.footer-three-4-one {
+				width: 735px;
+				margin-top: 10px;
+				/* background-color: #00ff7f; */
+			}
+
+			/* ---------------大疆创新版权所有的--背景框------------------- */
+			.footer-three-4 a {
+				text-decoration: none;
+				/* 去除下划线 */
+				color: #6C7073;
+			}
+
+			.footer-three-4 a:hover {
+				color: #0060ef;
+			}
+
+			.footer-three-4-two {
+				margin-left: 310px;
+				margin-top: 10px;
+				width: 155px;
+				color: #6C7073;
+				/* background-color:#55ffff; */
+			}
+
+
+			/* ---------在线支持链接的修饰---------------- */
+			.footer-one-3 a {
+				text-decoration: none;
+			}
+
+			.footer-one-3 a:hover {
+				text-decoration: underline;
+			}
+
+			/* --------------------------------------------- */

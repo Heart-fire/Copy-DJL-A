@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont3.ttf?t=1705281213278') format('truetype');
+  /* -------如果重命名，变量也得改名称----！！！！！！！！-----------*/
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xinlangweibo:before {
+  content: "\f01af";
+}
+
+.icon-weixin:before {
+  content: "\f0106";
+}
+
+.icon-douyins:before {
+  content: "\e62c";
+}
+
+.icon-bzhanicon:before {
+  content: "\e61d";
+}
+
+.icon-toutiaoyangshi:before {
+  content: "\e516";
+}
+
+.icon-tengxunwang:before {
+  content: "\e832";
+}
+

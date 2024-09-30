@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/font/iconfont.css" />
+	</head>
+	<body>
+		<div class=page-background>
+			<div class="wrapper">
+				<div class="container">
+					<a href="index.html">
+						<i class="iconfont icon-efcdfdfeafeadc"></i>
+					</a>
+					<h1 class="dji-page-title">登录大疆</h1>
+					<div class="tablist">
+						
+						<button class="tablinks" onclick="openTab(event, 'WeChatLogin')"id="defaultOpen">微信登录</button>
+						<button class="tablinks" onclick="openTab(event, 'SMSLogin')">短信登录</button>
+						<button class="tablinks" onclick="openTab(event, 'PasswordLogin')">密码登录</button>					
+												
+					</div>
+					<div id="WeChatLogin" class="tabcontent">
+					    <!-- 微信登录内容 -->
+						<div class="QR-code">
+							<img src="image/QR code.jpg" alt="微信登入" />
+						</div>
+						<div class="info">
+							<div class="info-1">使用微信扫一扫登录</div>
+							<div class="link-to-register">新用户？<a href="./Register.html"> 注册DJI账号 </a></div>
+							<div class="info-2">若继续，则表示同意
+							<a href="#">隐私政策</a>
+							和
+							<a href="#">使用条款</a>
+							</div>
+						</div>
+					</div>
+					<div id="SMSLogin" class="tabcontent">
+					    <!-- 短信登录内容 -->
+						<div class="inner">
+							<div class="title">请输入手机号</div>
+							<form>
+							
+								<div class="iPhone">
+									<div class="sub">
+										<div class="sub-1">+86</div>
+									</div>
+										<input type="email" class="Phone">
+								</div>
+								<br>
+								<br>
+								<!-- -------------------------------请按住滑块，拖动到最右边------------- -->
+								<div class="iPhone">
+									<div class="sub" style="background-color: #ffffff;">
+										<!-- -------------------------------------------------------箭头 -->
+										<div class="sub-1" style="color: #818181;font-size: 15px; ">&nbsp;>> </div>
+									</div>
+									<div class="Phone" style="background-color: #F5F5F5; 
+										   font-size: 13px;
+										   text-align: center;
+										   line-height: 45px;">
+										请按住滑块，拖动到最右边
+									</div>
+								</div>
+								<!-- --------------------------------请按住滑块，拖动到最右边---------------------- -->
+								
+								
+								<div class="action">
+									<button>下一步</button>
+									<div class="link-to-register">新用户？<a href="./Register.html"> 注册DJI账号 </a></div>
+								</div>
+							</form>
+						</div>
+							
+					</div>
+					<div id="PasswordLogin" class="tabcontent">
+					    <!-- 密码登录内容 -->
+						<div class="inner">
+							<form method="post">
+								<div class="dji-form-input dji-input-labelMargin">
+									<div class="dji-input-label"> 邮箱/手机 </div>									
+									<input type="text" name="account-number" >									
+								</div>
+								<div class="dji-form-input">
+									<div class="dji-input-label"> 密码 </div>									
+									<input type="password" name="account-number" >									
+									<div class="Forgot-password"><a href="#">忘记密码</a></div>						
+									<div class="action">
+										<button>登录</button>
+										<div class="link-to-register">新用户？<a href="./Register.html"> 注册DJI账号 </a></div>
+									</div>
+								</div>
+							</form>
+						</div>						
+					</div>					
+				</div>
+			</div>
+		</div>
+		<script>
+			function openTab(evt, tabName) {
+			    // 隐藏所有元素
+			    var i, tabcontent, tablinks;
+			    tabcontent = document.getElementsByClassName("tabcontent");
+			    for (i = 0; i < tabcontent.length; i++) {
+			        tabcontent[i].style.display = "none";
+			    }
+			    // 移除所有tablinks的"active"类
+			    tablinks = document.getElementsByClassName("tablinks");
+			    for (i = 0; i < tablinks.length; i++) {
+			        tablinks[i].className = tablinks[i].className.replace(" active", "");
+			    }
+			    // 显示当前标签的内容，并添加"active"类到按钮
+				document.getElementById(tabName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			// 默认打开微信登录标签页
+			document.getElementById("defaultOpen").click();
+		</script>
+	</body>
+</html>
